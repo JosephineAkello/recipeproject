@@ -31,7 +31,4 @@ public class UnitofMeasure {
         this.description = description;
     }
 
-    @ManyToOne
-    private Ingredient ingredient;
-
 }
