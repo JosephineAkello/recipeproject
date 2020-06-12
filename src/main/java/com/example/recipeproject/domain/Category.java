@@ -16,7 +16,7 @@ public class Category {
 
     private String description;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "categories")
     private Set<Recipe> recipeSet;
 
     public Long getId() {
