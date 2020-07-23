@@ -26,7 +26,7 @@ class RecipeServiceImplTest {
     @Before("hhhh")
     void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
-        recipeService = new RecipeServiceImpl(recipeRepository)
+        recipeService = new RecipeServiceImpl(recipeRepository);
     }
 
 
@@ -43,6 +43,7 @@ class RecipeServiceImplTest {
 
         assertEquals(recipeSet.size(), 0);
         verify(recipeRepository, times(1)).findAll();
+
 
     }
 }
